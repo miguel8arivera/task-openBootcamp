@@ -1,8 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        var name = "kamila";
-        System.out.println(name.length());
+
 
         var result=addition(20,30);
         System.out.println(result);
@@ -12,8 +11,59 @@ public class Main {
         nuevoAutomovil.aumentarPuertas();
 
         System.out.println(nuevoAutomovil.numeroPuerta);
+// Condicionales
+        int numeroIf = 0;
+        if(numeroIf > 0){
+            System.out.println("EL numero es mayor que 0");
+        } else if (numeroIf< 0) {
+            System.out.println("El numero es menor que 0");
+        }else {
+            System.out.println("El numero es 0");
+        }
 
 
+// Ciclos
+
+int numero = 0;
+while(numero < 3){
+    System.out.println(numero);
+    numero = numero +1;
+}
+
+int numero2 = 3;
+do{
+    System.out.println(numero2);
+    numero2 = numero2 -1;
+}while(numero2>3);
+
+
+
+for(int contador  = 0; contador <=10; contador++){
+    System.out.println(contador);
+}
+
+// estructura de control switch
+
+        var season = "Fall";
+        switch (season){
+            case "Summer" : {
+                   System.out.println("La estacion es Verano");
+                   break;
+            }
+            case "Spring":{
+                System.out.println("La estacion es Primavera");
+                break;
+            }
+            case "Fall":{
+                System.out.println("La estacion es Otoño");
+                break;
+            }
+            case "Winter":{
+                System.out.println("La estacion es Invierno");
+                break;
+            }
+            default: System.out.println("No es ninguna estacion");
+        }
     }
 
 static int addition(int a, int b){
