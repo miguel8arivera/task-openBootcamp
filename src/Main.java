@@ -64,6 +64,15 @@ for(int contador  = 0; contador <=10; contador++){
             }
             default: System.out.println("No es ninguna estacion");
         }
+
+        Persona persona = new Persona();
+            persona.setName("Miguel");
+            persona.setEdad(26);
+            persona.setTelefono(123456789);
+
+            System.out.println(persona.getName());
+            System.out.println(persona.getEdad());
+            System.out.println(persona.getTelefono());
     }
 
 static int addition(int a, int b){
@@ -78,4 +87,36 @@ class Automovil {
         this.numeroPuerta ++;
     }
 }
+
+class Persona {
+    private int edad;
+    private String name;
+    private int telefono;
+
+    // Setters
+    public void setEdad(int edad){
+        this.edad = edad;
+    }
+    public  void setName(String name){
+        this.name = name;
+    }
+    public void setTelefono(int telefono){
+        this.telefono = telefono;
+    }
+
+    //Getters
+
+    public int getEdad(){
+        return this.edad;
+    }
+
+    public String getName(){
+        return this.name;
+    }
+
+    public int getTelefono(){
+        return this.telefono;
+    }
+}
+
 
