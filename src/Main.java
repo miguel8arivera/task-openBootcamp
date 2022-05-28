@@ -73,6 +73,19 @@ for(int contador  = 0; contador <=10; contador++){
             System.out.println(persona.getName());
             System.out.println(persona.getEdad());
             System.out.println(persona.getTelefono());
+
+        Cliente cliente = new Cliente();
+        cliente.edad = 27;
+        cliente.nombre="Kamila";
+        cliente.telefono = 1234567;
+        cliente.credito = 23455;
+
+        System.out.println(cliente.nombre +" " + cliente.edad+ " " + cliente.telefono + " "+ cliente.credito);
+
+        Trabajador trabajador = new Trabajador();
+        trabajador.salario = 3000;
+        System.out.println(trabajador.salario);
+
     }
 
 static int addition(int a, int b){
@@ -119,4 +132,17 @@ class Persona {
     }
 }
 
+class Persona2 {
+    int edad;
+    String nombre;
+    int telefono;
+
+}
+class Cliente extends  Persona2 {
+    public int credito;
+}
+
+class Trabajador extends  Persona2 {
+    int salario;
+}
 
